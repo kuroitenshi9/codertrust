@@ -1,0 +1,80 @@
+body {
+    font-family: arial;
+}
+h1 {
+    font-family: Georgia;
+}
+#welcome {
+    position: relative;
+    height: 60vh;
+    margin-top: 20px;
+    background: url(https://picsum.photos/g/1600/800?image=1060);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.welcome-bg {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .7);
+    
+}
+
+#kawy {
+    padding: 5% O;
+    text-align: center;
+}
+#kawy h1 {
+    margin-bottom: 5%;
+}
+.kawy-container {
+    display: flex;
+    justify-content: space-between;
+}
+.kawy-box {
+    position: relative;
+    width: 24%;
+    padding-bottom: 24%;
+    background: rgba(0,0,0, .7);
+    color: white;
+    
+}
+.box-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+
+}
+@media only screen and (max-width: 960px) {
+    .kawy-container {
+        flex-wrap: wrap;
+    }
+    .kawy-box {
+        width: 49%;
+        height: 100%;
+        padding-bottom: 49%;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .kawy-container {
+        flex-wrap: wrap;
+    }
+
+    .kawy-box {
+        width: 100%;
+        padding-bottom: 100%;
+        margin-bottom: 2%;
+    }
+}
+
+
